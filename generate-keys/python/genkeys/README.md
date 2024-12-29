@@ -1,9 +1,16 @@
 # genkeys
 
+## Docs
 
-## Setup
+https://bip-utils.readthedocs.io/en/latest/bip_utils/bip/bip39/bip39_mnemonic.html
 
-Pre-req: Install a version of python with pyenv
+The list of tokens supported by bip44:
+https://bip-utils.readthedocs.io/en/latest/bip_utils/bip/conf/bip44/bip44_coins.html#bip_utils.bip.conf.bip44.bip44_coins.Bip44Coins.CARDANO_BYRON_ICARUS
+
+
+## Poetry Env Setup
+
+Pre-req: Install a version of python with pyenv (e.g. 3.12.4)
 
 Set a Python version (aligned with pyproject.toml):
 ```SH
@@ -36,6 +43,22 @@ Select your active virt env in VScode so it can resolve the deps
 
 poetry add bip-utils
 
+
+## Notes
+
+- BIP-44 stands for Bitcoin Improvement Proposal 44, which defines a standard for hierarchical deterministic (HD) wallets.
+- BIP-44 builds on BIP-32 (HD wallets) and BIP-39 (mnemonics).
+- It uses a single master seed to deterministically generate a hierarchical tree of keys.
+
+
+## Example Tokens Supported
+
+CARDANO_BYRON_ICARUS
+BITCOIN
+ETHEREUM
+
+
+## Not used
 
 ```SH
 py_ver=3.12.4; env_name=crypto-utils

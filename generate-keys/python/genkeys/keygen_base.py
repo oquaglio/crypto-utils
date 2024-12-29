@@ -1,0 +1,1 @@
+#  For shared utilities and base functions across blockchains
